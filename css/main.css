@@ -5,6 +5,10 @@ html {
   line-height: 1.5;
 }
 
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
 }
@@ -12,15 +16,19 @@ body {
 header {
   display: block;
   margin: 0;
-  padding: 0;
+  padding: .6em;
   background-color: #79756f;
-  border-top: solid #595652 5px;
-  border-bottom: solid #595652 5px;
+  border-top: solid #595652 3px;
+  border-bottom: solid #595652 3px;
 }
 
 a {
   text-decoration: none;
   color: white;
+  padding: .5em .75em;
+  background-color: #713837;
+  border-radius: 10px;
+  display: inline-block;
 }
 
 .header {
@@ -29,10 +37,11 @@ a {
   color: #79756f;
 }
 
-.header h1 {
+h1 {
   text-align: center;
   color: #fff;
   margin: 0;
+  font-family: Bevan, serif;
 }
 
 nav {
@@ -58,14 +67,8 @@ header ul {
 
 .planets {
   display: inline-block;
-  margin: 0 .3em 1em;
-  max-width: 20em;
-  padding: 1em;
-  background-color: #713837;
-  border-radius: 10px;
   text-align: center;
 }
-
 
 body ul li {
   color: white;
